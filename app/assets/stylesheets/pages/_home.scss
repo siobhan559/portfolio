@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+.header-container {
+  display: flex;
+}
+.header-container h1{
+  font-size: 100px;
+}
+
+.header-container h2{
+  font-size: 70px;
+}
