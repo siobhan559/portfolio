@@ -11,7 +11,7 @@
         <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
         <a class="nav-link" id="work-tab" data-toggle="pill" href="#work" role="tab" aria-controls="work" aria-selected="false">Work</a>
         <a class="nav-link" id="cv-tab" data-toggle="pill" href="#cv" role="tab" aria-controls="cv" aria-selected="false">CV</a>
-        <a class="nav-link" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Me</a>
+        <a class="nav-link" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
       </div>
     </div>
     <div class="col-10">
@@ -83,8 +83,11 @@
             Get in touch via email to siobhanbrown559@gmail.com
           </p>
           <p>
-            Or give me a shout on LinkedIn
-            <i class="devicon-linkedin-plain colored"></i>
+            Or give me a shout on
+            <%= link_to "https://www.linkedin.com/in/siobhan-brown559/", target: :_blank do %>
+              LinkedIn
+              <i class="devicon-linkedin-plain colored"></i>
+            <% end %>
           </p>
         </div>
       </div>
