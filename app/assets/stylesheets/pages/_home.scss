@@ -23,6 +23,14 @@
   line-height: 3rem;
 }
 
+.nav-link {
+  color: $text;
+}
+
+a:hover {
+  color: $text;
+}
+
 #about-tab.active {
   background-color: $pink;
 }
