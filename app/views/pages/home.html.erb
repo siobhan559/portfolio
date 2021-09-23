@@ -54,9 +54,22 @@
             <p>
               The website was built during the final weeks of a Le Wagon bootcamp using Ruby, Rails, HTML, SCSS, Bootstrap, JavaScript (ES6), PostgreSQL and Heroku.
             </p>
-            <div class="screenshots">
-              <%= image_tag "papaya_home_screenshot.png", id: "mobile_screenshot", :title => "title" %>
-              <%= image_tag "papaya_index.png", id: "index_screenshot" %>
+            <div class="papaya-screenshots">
+              <%= image_tag "papaya_home_screenshot.png", id: "mobile-screenshot" %>
+              <%= image_tag "papaya_index.png", id: "index-screenshot" %>
+            </div>
+          </div>
+          <div class="project-card">
+            <%= link_to "Eocene", "https://eocene698.herokuapp.com/", target: :_blank %>
+            <p>
+              Marketplace web app designed to allow extreme sport equipment to be rented out. Search for equipment, sort by category, rent out your own.
+            </p>
+            <p>
+              Built using Ruby on Rails in just one week.
+            </p>
+            <div class="eocene-screenshots">
+              <%= image_tag "eocene_home.png", class: "eocene-screenshot" %>
+              <%= image_tag "eocene_index.png", class: "eocene-screenshot" %>
             </div>
           </div>
         </div>

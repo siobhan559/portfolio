@@ -14,16 +14,25 @@
   font-size: 5rem;
 }
 
-.screenshots {
+.papaya-screenshots {
   justify-content: space-evenly;
 }
 
-#mobile_screenshot {
+#mobile-screenshot {
   width: 28%;
   object-fit: cover;
 }
 
-#index_screenshot {
+#index-screenshot {
   width: 65%;
   object-fit: cover;
+}
+
+.eocene-screenshots {
+  justify-content: center;
+}
+
+.eocene-screenshot {
+  object-fit: cover;
+  width: 55%;
 }
