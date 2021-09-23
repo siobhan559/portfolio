@@ -23,6 +23,22 @@
   line-height: 3rem;
 }
 
+#about-tab.active {
+  background-color: $pink;
+}
+
+#work-tab.active {
+  background-color: $purple;
+}
+
+#cv-tab.active {
+  background-color: $pink;
+}
+
+#contact-tab.active {
+  background-color: $orange;
+}
+
 .main-container {
   margin: 50px 30px 50px 30px;
   padding: 10px 20px 10px 20px;
