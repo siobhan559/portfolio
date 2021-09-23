@@ -12,6 +12,17 @@
   padding-right: 40px;
 }
 
+#tabs {
+  position: sticky;
+  top: 5px;
+  height: 65vh;
+  border-right: 6px solid red;
+}
+
+#v-pills-tab {
+  line-height: 3rem;
+}
+
 .main-container {
   margin: 50px 30px 50px 30px;
   padding: 10px 20px 10px 20px;
@@ -23,6 +34,25 @@
 
 .main-container p {
   padding: 10px 0 10px 0;
+}
+
+#text-box1 {
+  border-right: 6px solid red;
+  border-top: 6px solid red;
+}
+
+#text-box2 {
+  border-right: 6px solid red;
+  border-top: 6px solid red;
+}
+
+#text-box3 {
+  border-left: 6px solid red;
+  border-bottom: 6px solid red;
+}
+
+#text-box4 {
+  border-bottom: 6px solid red;
 }
 
 .tab-content {
