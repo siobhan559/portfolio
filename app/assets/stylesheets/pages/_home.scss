@@ -38,20 +38,56 @@
 
 #text-box1 {
   border-right: 2px solid $orange;
+  // border-top: 2px solid $orange;
+  position: relative;
+}
+
+#text-box1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
   border-top: 2px solid $orange;
 }
 
+
 #text-box2 {
   border-right: 2px solid $yellow;
+  // border-top: 2px solid $yellow;
+  position: relative;
+}
+
+#text-box2::after {
+  content : "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
   border-top: 2px solid $yellow;
 }
 
 #text-box3 {
   border-left: 2px solid $yellow;
+  // border-bottom: 2px solid $yellow;
+  position: relative;
+}
+
+#text-box3::after {
+  content : "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
   border-bottom: 2px solid $yellow;
 }
 
-#text-box4 {
+#text-box4{
+  width: 60%;
+  text-align: left;
   border-bottom: 2px solid $purple;
 }
 
