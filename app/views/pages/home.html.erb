@@ -6,7 +6,7 @@
 <div class="main-container">
 
   <div class="row">
-    <div class="col-2">
+    <div class="col-2" id="tabs">
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
         <a class="nav-link" id="work-tab" data-toggle="pill" href="#work" role="tab" aria-controls="work" aria-selected="false">Work</a>
@@ -18,12 +18,14 @@
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
           <h4>About me</h4>
-          <p>
-            Graduate of Le Wagon's Full-stack Web Development bootcamp, looking to combine my creativity and logical problem solving abilities into a new challenge.
-          </p>
-          <p>
-            Previously, I spent many years working in fine dining, managing and training a team of staff, both in the UK and abroad. It was here I developed a love for working directly with people and a passion for sustainability. This led me to a role utilising my strong customer-facing skills for a food charity, focusing both on eliminating food waste and food poverty.
-          </p>
+          <div id="text-box1">
+            <p>
+              Graduate of Le Wagon's Full-stack Web Development bootcamp, looking to combine my creativity and logical problem solving abilities into a new challenge.
+            </p>
+            <p>
+              Previously, I spent many years working in fine dining, managing and training a team of staff, both in the UK and abroad. It was here I developed a love for working directly with people and a passion for sustainability. This led me to a role utilising my strong customer-facing skills for a food charity, focusing both on eliminating food waste and food poverty.
+            </p>
+          </div>
           <div class="tech-stack-card">
             <h4>Tech Stack</h4>
             <div class="icons">
@@ -38,38 +40,42 @@
               <i class="devicon-html5-plain-wordmark colored"></i>
               <i class="devicon-javascript-plain colored"></i>
               <i class="devicon-postgresql-plain-wordmark colored"></i>
+            </div>
               <p>
                 And currently learning more indepth Javascript, TDD and React...
               </p>
-            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
           <h4>Recent Projects</h4>
           <div class="project-card">
-            <%= link_to "Papaya", "https://www.papayapapaya.com", target: :_blank %>
-            <p>
-              A responsive web app that allows people to search for volunteering and charity events in their local area.
-            </p>
-            <p>
-              Events can be searched for, they're displayed on a map, users can filter through the results and either favourite the event for later or register their attendance. They can also message with other users and create their own events.
-            </p>
-            <p>
-              The website was built during the final weeks of a Le Wagon bootcamp using Ruby, Rails, HTML, SCSS, Bootstrap, JavaScript (ES6), PostgreSQL and Heroku.
-            </p>
+            <%= link_to "Papaya", "https://www.papayapapaya.com", target: :_blank, class: "external-link" %>
+            <div id="text-box2">
+              <p>
+                A responsive web app that allows people to search for volunteering and charity events in their local area.
+              </p>
+              <p>
+                Events can be searched for, they're displayed on a map, users can filter through the results and either favourite the event for later or register their attendance. They can also message with other users and create their own events.
+              </p>
+              <p>
+                The website was built during the final weeks of a Le Wagon bootcamp using Ruby, Rails, HTML, SCSS, Bootstrap, JavaScript (ES6), PostgreSQL and Heroku.
+              </p>
+            </div>
             <div class="papaya-screenshots">
               <%= image_tag "papaya_home_screenshot.png", id: "mobile-screenshot" %>
               <%= image_tag "papaya_index.png", id: "index-screenshot" %>
             </div>
           </div>
           <div class="project-card">
-            <%= link_to "Eocene", "https://eocene698.herokuapp.com/", target: :_blank %>
-            <p>
-              Marketplace web app designed to allow extreme sport equipment to be rented out. Search for equipment, sort by category, rent out your own.
-            </p>
-            <p>
-              Built using Ruby on Rails in just one week.
-            </p>
+            <%= link_to "Eocene", "https://eocene698.herokuapp.com/", target: :_blank, class: "external-link" %>
+             <div id="text-box3">
+              <p>
+                Marketplace web app designed to allow extreme sport equipment to be rented out. Search for equipment, sort by category, rent out your own.
+              </p>
+              <p>
+                Built using Ruby on Rails in just one week.
+              </p>
+            </div>
             <div class="eocene-screenshots">
               <%= image_tag "eocene_home.png", class: "eocene-screenshot" %>
               <%= image_tag "eocene_index.png", class: "eocene-screenshot" %>
@@ -77,21 +83,23 @@
           </div>
         </div>
         <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
-          <h4>All the other stuff I used to do</h4>
+          <h4>Some of the other stuff I've been up to:</h4>
           <%= image_tag "CV.png", class: "CV-img" %>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
           <h4>Contact Me</h4>
-          <p>
-            Get in touch via email to siobhanbrown559@gmail.com
-          </p>
-          <p>
-            Or give me a shout on
-            <%= link_to "https://www.linkedin.com/in/siobhan-brown559/", target: :_blank do %>
-              LinkedIn
-              <i class="devicon-linkedin-plain colored"></i>
-            <% end %>
-          </p>
+          <div id="text-box4">
+            <p>
+              Get in touch via email to siobhanbrown559@gmail.com
+            </p>
+            <p>
+              Or give me a shout on
+              <%= link_to "https://www.linkedin.com/in/siobhan-brown559/", target: :_blank, style: 'text-decoration: none' do %>
+                LinkedIn
+                <i class="devicon-linkedin-plain colored"></i>
+              <% end %>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,141 @@
 // Specific CSS for your home-page
 .header-container {
-  display: flex;
+  margin: 20px;
 }
 .header-container h1{
-  font-size: 100px;
+  font-size: 7rem;
 }
 
 .header-container h2{
-  font-size: 70px;
+  font-size: 3rem;
+  text-align: right;
+  padding-right: 40px;
+}
+
+#tabs {
+  position: sticky;
+  top: 5px;
+  height: 65vh;
+  border-right: 4px solid $green;
+}
+
+#v-pills-tab {
+  line-height: 3rem;
+}
+
+.nav-link {
+  color: $text;
+}
+
+a:hover {
+  color: $text;
+}
+
+#about-tab.active {
+  background-color: $pink;
+}
+
+#work-tab.active {
+  background-color: $purple;
+}
+
+#cv-tab.active {
+  background-color: $pink;
+}
+
+#contact-tab.active {
+  background-color: $orange;
+}
+
+.main-container {
+  margin: 50px 30px 50px 30px;
+  padding: 10px 20px 10px 20px;
+}
+
+.main-container h4{
+  font-size: 2rem;
+}
+
+.external-link {
+  font-size: 2rem;
+  color: $text;
+  text-decoration: none;
+  background:
+    linear-gradient($pink 0 0)
+    left /var(--d, 0%) 100% no-repeat;
+  transition: 0.5s;
+}
+.external-link:hover {
+  --d: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container p {
+  padding: 10px 0 10px 0;
+}
+
+#text-box1 {
+  border-right: 2px solid $orange;
+  // border-top: 2px solid $orange;
+  position: relative;
+  padding: 20px 20px 0 0;
+}
+
+#text-box1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
+  border-top: 2px solid $orange;
+}
+
+
+#text-box2 {
+  border-right: 2px solid $yellow;
+  // border-top: 2px solid $yellow;
+  position: relative;
+  padding: 20px 20px 0 0;
+}
+
+#text-box2::after {
+  content : "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
+  border-top: 2px solid $yellow;
+}
+
+#text-box3 {
+  border-left: 2px solid $yellow;
+  // border-bottom: 2px solid $yellow;
+  position: relative;
+  padding: 0 0 20px 20px;
+}
+
+#text-box3::after {
+  content : "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 60%;  /* or 100px */
+  border-bottom: 2px solid $yellow;
+}
+
+#text-box4{
+  width: 60%;
+  text-align: left;
+  border-bottom: 2px solid $purple;
+  padding-bottom: 10px;
+}
+
+.tab-content {
+  margin: 0 50px 0 50px;
 }
 
 .icons {
@@ -16,6 +144,7 @@
 
 .papaya-screenshots {
   justify-content: space-evenly;
+  margin: 20px;
 }
 
 #mobile-screenshot {
@@ -35,6 +164,12 @@
 .eocene-screenshot {
   object-fit: cover;
   width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 .CV-img {
