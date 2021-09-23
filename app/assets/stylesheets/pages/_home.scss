@@ -56,6 +56,21 @@ a:hover {
   font-size: 2rem;
 }
 
+.external-link {
+  font-size: 2rem;
+  color: $text;
+  text-decoration: none;
+  background:
+    linear-gradient($pink 0 0)
+    left /var(--d, 0%) 100% no-repeat;
+  transition: 0.5s;
+}
+.external-link:hover {
+  --d: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
 .main-container p {
   padding: 10px 0 10px 0;
 }

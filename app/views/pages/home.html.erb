@@ -49,7 +49,7 @@
         <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
           <h4>Recent Projects</h4>
           <div class="project-card">
-            <%= link_to "Papaya", "https://www.papayapapaya.com", target: :_blank %>
+            <%= link_to "Papaya", "https://www.papayapapaya.com", target: :_blank, class: "external-link" %>
             <div id="text-box2">
               <p>
                 A responsive web app that allows people to search for volunteering and charity events in their local area.
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="project-card">
-            <%= link_to "Eocene", "https://eocene698.herokuapp.com/", target: :_blank %>
+            <%= link_to "Eocene", "https://eocene698.herokuapp.com/", target: :_blank, class: "external-link" %>
              <div id="text-box3">
               <p>
                 Marketplace web app designed to allow extreme sport equipment to be rented out. Search for equipment, sort by category, rent out your own.
@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
-          <h4>All the other stuff I used to do</h4>
+          <h4>Some of the other stuff I've been up to:</h4>
           <%= image_tag "CV.png", class: "CV-img" %>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
@@ -94,7 +94,7 @@
             </p>
             <p>
               Or give me a shout on
-              <%= link_to "https://www.linkedin.com/in/siobhan-brown559/", target: :_blank do %>
+              <%= link_to "https://www.linkedin.com/in/siobhan-brown559/", target: :_blank, style: 'text-decoration: none' do %>
                 LinkedIn
                 <i class="devicon-linkedin-plain colored"></i>
               <% end %>
