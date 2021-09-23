@@ -40,6 +40,7 @@
   border-right: 2px solid $orange;
   // border-top: 2px solid $orange;
   position: relative;
+  padding: 20px 20px 0 0;
 }
 
 #text-box1::after {
@@ -57,6 +58,7 @@
   border-right: 2px solid $yellow;
   // border-top: 2px solid $yellow;
   position: relative;
+  padding: 20px 20px 0 0;
 }
 
 #text-box2::after {
@@ -73,6 +75,7 @@
   border-left: 2px solid $yellow;
   // border-bottom: 2px solid $yellow;
   position: relative;
+  padding: 0 0 20px 20px;
 }
 
 #text-box3::after {
@@ -89,6 +92,7 @@
   width: 60%;
   text-align: left;
   border-bottom: 2px solid $purple;
+  padding-bottom: 10px;
 }
 
 .tab-content {
