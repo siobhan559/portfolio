@@ -13,3 +13,26 @@
 .icons {
   font-size: 5rem;
 }
+
+.papaya-screenshots {
+  justify-content: space-evenly;
+}
+
+#mobile-screenshot {
+  width: 28%;
+  object-fit: cover;
+}
+
+#index-screenshot {
+  width: 65%;
+  object-fit: cover;
+}
+
+.eocene-screenshots {
+  justify-content: center;
+}
+
+.eocene-screenshot {
+  object-fit: cover;
+  width: 55%;
+}
