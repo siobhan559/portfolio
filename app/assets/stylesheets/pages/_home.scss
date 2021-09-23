@@ -13,3 +13,17 @@
 .icons {
   font-size: 5rem;
 }
+
+.screenshots {
+  justify-content: space-evenly;
+}
+
+#mobile_screenshot {
+  width: 28%;
+  object-fit: cover;
+}
+
+#index_screenshot {
+  width: 65%;
+  object-fit: cover;
+}

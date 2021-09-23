@@ -6,7 +6,7 @@
 <div class="main-container">
 
   <div class="row">
-    <div class="col-3">
+    <div class="col-2">
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
         <a class="nav-link" id="work-tab" data-toggle="pill" href="#work" role="tab" aria-controls="work" aria-selected="false">Work</a>
@@ -14,7 +14,7 @@
         <a class="nav-link" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Me</a>
       </div>
     </div>
-    <div class="col-9">
+    <div class="col-10">
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
           <h4>About me</h4>
@@ -41,7 +41,25 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">Hello</div>
+        <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+          <h4>Recent Projects</h4>
+          <div class="project-card">
+            <%= link_to "Papaya", "https://www.papayapapaya.com", target: :_blank %>
+            <p>
+              A responsive web app that allows people to search for volunteering and charity events in their local area.
+            </p>
+            <p>
+              Events can be searched for, they're displayed on a map, users can filter through the results and either favourite the event for later or register their attendance. They can also message with other users and create their own events.
+            </p>
+            <p>
+              The website was built during the final weeks of a Le Wagon bootcamp using Ruby, Rails, HTML, SCSS, Bootstrap, JavaScript (ES6), PostgreSQL and Heroku.
+            </p>
+            <div class="screenshots">
+              <%= image_tag "papaya_home_screenshot.png", id: "mobile_screenshot" %>
+              <%= image_tag "papaya_index.png", id: "index_screenshot" %>
+            </div>
+          </div>
+        </div>
         <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">???</div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">is this working</div>
       </div>
