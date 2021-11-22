@@ -181,7 +181,16 @@ a:hover {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
 
+.gif-screenshots {
+  justify-content: center;
+}
+
+.simpsons-screenshot {
+  width: 90%;
+  object-fit: cover;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .CV-img {
